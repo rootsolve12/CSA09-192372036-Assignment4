@@ -1,0 +1,17 @@
+{
+  "clicks": [
+    [
+      100,
+      100
+    ],
+    [
+      200,
+      130
+    ],
+    [
+      280,
+      180
+    ]
+  ],
+  "interaction": "minimize then restore"
+}

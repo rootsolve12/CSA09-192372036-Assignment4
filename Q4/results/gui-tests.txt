@@ -1,0 +1,10 @@
+Actual GUI execution: OpenJDK 21.0.12.1; 2026-11-06T15:41:22.233193191Z
+SCREENSHOT Q4/screenshots/before-minimize.png
+SCREENSHOT Q4/screenshots/after-restore.png
+PASS: Three mouse events stored three points
+PASS: Stored dot survives real minimize and restore
+SCREENSHOT Q4/screenshots/immediate-before.png
+SCREENSHOT Q4/screenshots/immediate-after.png
+PASS: Immediate-mode dot disappears on restore
+PASS: Misspelled method without Override compiles but receives no click callback
+SCREENSHOT Q4/screenshots/misspelled.png

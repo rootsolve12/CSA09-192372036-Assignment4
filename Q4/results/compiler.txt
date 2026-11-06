@@ -1,0 +1,16 @@
+$ java -m jdk.compiler/com.sun.tools.javac.Main -g -cp /workspace/scratch/fa9930c13bab/assignment4/build/common -d /workspace/scratch/fa9930c13bab/assignment4/build/Q4 /workspace/scratch/fa9930c13bab/assignment4/Q4/ImmediatePad.java /workspace/scratch/fa9930c13bab/assignment4/Q4/DrawPad.java
+
+
+Exit=0; expected_failure=False
+$ java -m jdk.compiler/com.sun.tools.javac.Main -g -cp /workspace/scratch/fa9930c13bab/assignment4/build/common -d /workspace/scratch/fa9930c13bab/assignment4/build/Q4/WithOverride /workspace/scratch/fa9930c13bab/assignment4/Q4/variants/WithOverride/DrawPad.java
+
+/workspace/scratch/fa9930c13bab/assignment4/Q4/variants/WithOverride/DrawPad.java:21: error: method does not override or implement a method from a supertype
+            @Override public void mouseclicked(MouseEvent e) {
+            ^
+1 error
+
+Exit=1; expected_failure=True
+$ java -m jdk.compiler/com.sun.tools.javac.Main -g -cp /workspace/scratch/fa9930c13bab/assignment4/build/common -d /workspace/scratch/fa9930c13bab/assignment4/build/Q4/NoOverride /workspace/scratch/fa9930c13bab/assignment4/Q4/variants/NoOverride/DrawPad.java
+
+
+Exit=0; expected_failure=False
