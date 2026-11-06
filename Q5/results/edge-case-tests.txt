@@ -1,0 +1,9 @@
+Focused conversion regression checks
+PASS: before Frame: normal, huge same/cross currency, zero, true overflow, NaN, infinity, negative
+PASS: before Named: normal, huge same/cross currency, zero, true overflow, NaN, infinity, negative
+PASS: before Anonymous: normal, huge same/cross currency, zero, true overflow, NaN, infinity, negative
+PASS: before Lambda: normal, huge same/cross currency, zero, true overflow, NaN, infinity, negative
+PASS: after Frame: normal, huge same/cross currency, zero, true overflow, NaN, infinity, negative
+PASS: after Named: normal, huge same/cross currency, zero, true overflow, NaN, infinity, negative
+PASS: after Anonymous: normal, huge same/cross currency, zero, true overflow, NaN, infinity, negative
+PASS: after Lambda: normal, huge same/cross currency, zero, true overflow, NaN, infinity, negative

@@ -12,8 +12,8 @@
    setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
    addWindowListener(new WindowAdapter(){@Override public void windowClosing(WindowEvent e){dispose();}});pack();setMinimumSize(new Dimension(720,190));setSize(720,190);setLocationByPlatform(true);
   }
-@@ -19,6 +20,7 @@
-   try{double value=Double.parseDouble(amount.getText().trim());if(!Double.isFinite(value)||value<0)throw new NumberFormatException();message=String.format(Locale.ROOT,"%.2f %s",value/rate((String)from.getSelectedItem())*rate((String)to.getSelectedItem()),to.getSelectedItem());}
+@@ -26,6 +27,7 @@
+   try{double value=Double.parseDouble(amount.getText().trim());double converted=convertValue(value,(String)from.getSelectedItem(),(String)to.getSelectedItem());message=String.format(Locale.ROOT,"%.2f %s",converted,to.getSelectedItem());}
    catch(NumberFormatException ex){message="Invalid amount";}
    result.setText(message);
 +  JOptionPane.showMessageDialog(this,message,"Conversion",JOptionPane.INFORMATION_MESSAGE);
@@ -35,8 +35,8 @@
    setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
    addWindowListener(new WindowAdapter(){@Override public void windowClosing(WindowEvent e){dispose();}});pack();setMinimumSize(new Dimension(720,190));setSize(720,190);setLocationByPlatform(true);
   }
-@@ -20,6 +21,7 @@
-   try{double value=Double.parseDouble(amount.getText().trim());if(!Double.isFinite(value)||value<0)throw new NumberFormatException();message=String.format(Locale.ROOT,"%.2f %s",value/rate((String)from.getSelectedItem())*rate((String)to.getSelectedItem()),to.getSelectedItem());}
+@@ -27,6 +28,7 @@
+   try{double value=Double.parseDouble(amount.getText().trim());double converted=convertValue(value,(String)from.getSelectedItem(),(String)to.getSelectedItem());message=String.format(Locale.ROOT,"%.2f %s",converted,to.getSelectedItem());}
    catch(NumberFormatException ex){message="Invalid amount";}
    result.setText(message);
 +  JOptionPane.showMessageDialog(this,message,"Conversion",JOptionPane.INFORMATION_MESSAGE);
@@ -60,8 +60,8 @@
    setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
    addWindowListener(new WindowAdapter(){@Override public void windowClosing(WindowEvent e){dispose();}});pack();setMinimumSize(new Dimension(720,190));setSize(720,190);setLocationByPlatform(true);
   }
-@@ -22,6 +23,7 @@
-   try{double value=Double.parseDouble(amount.getText().trim());if(!Double.isFinite(value)||value<0)throw new NumberFormatException();message=String.format(Locale.ROOT,"%.2f %s",value/rate((String)from.getSelectedItem())*rate((String)to.getSelectedItem()),to.getSelectedItem());}
+@@ -29,6 +30,7 @@
+   try{double value=Double.parseDouble(amount.getText().trim());double converted=convertValue(value,(String)from.getSelectedItem(),(String)to.getSelectedItem());message=String.format(Locale.ROOT,"%.2f %s",converted,to.getSelectedItem());}
    catch(NumberFormatException ex){message="Invalid amount";}
    result.setText(message);
 +  JOptionPane.showMessageDialog(this,message,"Conversion",JOptionPane.INFORMATION_MESSAGE);
@@ -83,8 +83,8 @@
    setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
    addWindowListener(new WindowAdapter(){@Override public void windowClosing(WindowEvent e){dispose();}});pack();setMinimumSize(new Dimension(720,190));setSize(720,190);setLocationByPlatform(true);
   }
-@@ -20,6 +21,7 @@
-   try{double value=Double.parseDouble(amount.getText().trim());if(!Double.isFinite(value)||value<0)throw new NumberFormatException();message=String.format(Locale.ROOT,"%.2f %s",value/rate((String)from.getSelectedItem())*rate((String)to.getSelectedItem()),to.getSelectedItem());}
+@@ -27,6 +28,7 @@
+   try{double value=Double.parseDouble(amount.getText().trim());double converted=convertValue(value,(String)from.getSelectedItem(),(String)to.getSelectedItem());message=String.format(Locale.ROOT,"%.2f %s",converted,to.getSelectedItem());}
    catch(NumberFormatException ex){message="Invalid amount";}
    result.setText(message);
 +  JOptionPane.showMessageDialog(this,message,"Conversion",JOptionPane.INFORMATION_MESSAGE);

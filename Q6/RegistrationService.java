@@ -11,7 +11,7 @@ public class RegistrationService {
   if(event<1||event>3)throw new IllegalArgumentException("Choose an available event");
  }
  public String register(String id,String name,int event)throws SQLException {
-  id=id.trim();name=name.trim();validate(id,name,event);
+  id=id==null?null:id.trim();name=name==null?null:name.trim();validate(id,name,event);
   try{dao.insert(id,name,event);return "Registered "+id+" successfully";}
   catch(SQLException e){if(e.getErrorCode()==1062)return "Already registered for this event";throw e;}
  }

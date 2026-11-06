@@ -102,3 +102,7 @@ Loading every row transfers/materializes O(N) rows and retains O(N) model record
 | last_page | 16.363 | 50 | 1850 |
 
 The first page is much faster in this run, while the late OFFSET page is slower than the first. Fixed test order and a warm database/cache limit generalization. The sample is too small for universal speed claims. The 100000-row benchmark table is synthetic and separate from actual GUI registrations.
+
+## Null-input service boundary corrected
+
+RegistrationService now trims only non-null values and then calls its validator. Null IDs or names produce a meaningful IllegalArgumentException before the DAO is called. Focused tests also verify blank values and that valid padded values are trimmed and inserted once. See `results/edge-case-tests.txt` and `tools/EdgeCaseChecks.java`; these boundary tests use a recording DAO, while the existing MySQL GUI and concurrency evidence remains in the other result files.

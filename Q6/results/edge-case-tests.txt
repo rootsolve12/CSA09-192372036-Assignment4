@@ -1,0 +1,7 @@
+Focused registration regression checks
+PASS: invalid/null input rejected by validation before DAO
+PASS: invalid/null input rejected by validation before DAO
+PASS: invalid/null input rejected by validation before DAO
+PASS: invalid/null input rejected by validation before DAO
+PASS: invalid/null input rejected by validation before DAO
+PASS: valid padded input trimmed and inserted once

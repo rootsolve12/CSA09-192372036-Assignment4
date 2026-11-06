@@ -39,3 +39,14 @@ For a large application I would use a shared Action delegating to a separately t
 ## Evidence and execution
 
 `results/compiler.txt` records actual compilation. `results/gui-tests.txt` records assertions against running desktop windows. Screenshots are real screen captures and their filenames identify the requirement demonstrated. Tests were executed in the workspace; personally rerun every required task and understand the design before submission.
+
+## Conversion edge cases corrected
+
+All eight before/after style implementations form the target/source rate ratio before multiplying the amount. This preserves finite same-currency and cross-currency results for huge finite inputs. A genuinely unrepresentable result is rejected as Invalid amount instead of displaying Infinity. The shared pure conversion method in each version is checked without opening a window. Run the focused regression checks from the repository root:
+
+```sh
+java -m jdk.compiler/com.sun.tools.javac.Main -cp build/Q6 -d build/common tools/EdgeCaseChecks.java
+java -Djava.awt.headless=true -cp build/common:build/Q6 EdgeCaseChecks
+```
+
+`results/edge-case-tests.txt` records normal conversion, huge finite same/cross conversions, zero, true overflow, NaN, infinity and negative-input checks for every style and version. Existing GUI screenshots demonstrate the original normal interactions; these new numeric checks run headlessly.
