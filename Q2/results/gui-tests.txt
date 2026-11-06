@@ -1,0 +1,9 @@
+Actual GUI execution: OpenJDK 21.0.12.1; 2026-11-06T15:46:25.089175951Z
+PASS: Department event refreshes dependent doctor list
+PASS: Invalid patient rejected
+SCREENSHOT Q2/screenshots/invalid.png
+PASS: Valid appointment confirmed
+SCREENSHOT Q2/screenshots/booked.png
+PASS: Occupied doctor slot rejected
+SCREENSHOT Q2/screenshots/occupied.png
+PASS: No at close confirmation retains unfinished booking

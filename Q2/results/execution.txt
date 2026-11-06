@@ -1,0 +1,9 @@
+windowOpened
+windowActivated
+Booked P1001 with Dr Kumar 09:00
+windowClosing
+windowDeactivated
+windowActivated
+windowDeactivated
+windowClosed
+GUI tests passed: [Q2]

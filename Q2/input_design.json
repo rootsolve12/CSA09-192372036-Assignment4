@@ -1,0 +1,8 @@
+{
+  "department": "Orthopaedics",
+  "doctor": "Dr Kumar",
+  "patient_valid": "P1001",
+  "patient_invalid": "bad",
+  "slot": "09:00",
+  "close_confirmation_patient": "P1002"
+}
