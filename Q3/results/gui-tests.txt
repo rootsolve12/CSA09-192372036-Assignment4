@@ -1,0 +1,12 @@
+Actual GUI execution: OpenJDK 21.0.12.1; 2026-11-06T15:41:18.706921389Z
+SIZE 650x350 results_height=184 search_height=46 buttons_height=46
+SCREENSHOT Q3/screenshots/size-650x350.png
+SIZE 850x550 results_height=384 search_height=46 buttons_height=46
+PASS: Results absorb height increase; control row heights remain fixed
+SCREENSHOT Q3/screenshots/size-850x550.png
+SIZE 1100x750 results_height=584 search_height=46 buttons_height=46
+PASS: Results absorb height increase; control row heights remain fixed
+SCREENSHOT Q3/screenshots/size-1100x750.png
+PASS: Category filter returns 8 computing books
+PASS: Selected result can be reserved
+SCREENSHOT Q3/screenshots/reserved.png
