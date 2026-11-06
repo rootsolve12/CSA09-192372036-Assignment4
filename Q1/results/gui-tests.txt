@@ -1,0 +1,5 @@
+Actual GUI execution: OpenJDK 21.0.12.1; 2026-11-06T15:46:22.603068151Z
+PASS: Invalid amount rejected before database access
+SCREENSHOT Q1/screenshots/invalid.png
+PASS: Valid payment saved with receipt
+SCREENSHOT Q1/screenshots/paid.png

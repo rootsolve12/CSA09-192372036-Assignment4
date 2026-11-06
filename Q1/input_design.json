@@ -1,0 +1,10 @@
+{
+  "invalid": {
+    "register": "192372036",
+    "amount": "abc"
+  },
+  "valid": {
+    "register": "192372036",
+    "amount": "1500.00"
+  }
+}

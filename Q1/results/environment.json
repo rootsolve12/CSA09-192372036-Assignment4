@@ -1,0 +1,10 @@
+{
+  "task": "Q1",
+  "origin": "workspace graphical desktop",
+  "compiler": "OpenJDK 21.0.13 jdk.compiler",
+  "gui_runtime": "OpenJDK 21.0.12.1 desktop JRE",
+  "database": "MySQL Community Server 8.4.13",
+  "jdbc_driver": "MySQL Connector/J 9.5.0",
+  "evidence_utc": "2026-11-06",
+  "personal_student_execution_claimed": false
+}
