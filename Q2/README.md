@@ -73,3 +73,25 @@ Caching d departments containing m total doctors costs O(d+m) references and ini
 ## Evidence and execution
 
 `results/compiler.txt` records actual compilation. `results/gui-tests.txt` records assertions against running desktop windows. Screenshots are real screen captures and their filenames identify the requirement demonstrated. Tests were executed in the workspace; personally rerun every required task and understand the design before submission.
+
+## Database-on-change alternative pseudocode
+
+```text
+ALGORITHM REFRESH_DOCTORS_FROM_DATABASE
+INPUT selectedDepartment, latestRequestNumber
+OUTPUT current department's doctor list or visible error
+BEGIN
+    INCREMENT latestRequestNumber
+    CAPTURE requestNumber and selectedDepartment
+    DISABLE doctor selector
+    START background worker
+        OPEN connection and prepared statement
+        SELECT id, name FROM doctors WHERE department_id = ? ORDER BY name
+        BIND selectedDepartment; EXECUTE query; COLLECT matching doctors
+        CLOSE result set, statement and connection
+    ON completion on EDT
+        IF requestNumber differs from latestRequestNumber THEN RETURN END IF
+        IF worker failed THEN DISPLAY error ELSE REPLACE doctor list END IF
+        ENABLE selector when at least one doctor is available
+END
+```

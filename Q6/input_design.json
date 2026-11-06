@@ -1,0 +1,8 @@
+{
+  "student_id": "154783614",
+  "name": "B Hitesh Roy",
+  "normal_event": "Music",
+  "concurrent_event": "Drama",
+  "invalid_id": "bad",
+  "injected_dao_delay_ms": 1200
+}

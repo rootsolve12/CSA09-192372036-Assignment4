@@ -1,0 +1,13 @@
+Actual GUI execution: OpenJDK 21.0.12.1; 2026-11-06T15:41:41.245534837Z
+PASS: Invalid ID rejected
+SCREENSHOT Q6/screenshots/invalid.png
+Fixture student_id=154783614
+PASS: Normal registration stored in MySQL
+PASS: EDT timer advances during injected 1200ms database latency
+SCREENSHOT Q6/screenshots/normal.png
+PASS: Database unique key rejects duplicate registration
+SCREENSHOT Q6/screenshots/duplicate.png
+PASS: Music filter loads persisted registrations
+SCREENSHOT Q6/screenshots/filter.png
+PASS: Streaming CSV export contains selected Music registrations
+PASS: Concurrent submissions yield exactly one insert and one duplicate

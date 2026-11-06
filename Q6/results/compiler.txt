@@ -1,0 +1,4 @@
+$ java -m jdk.compiler/com.sun.tools.javac.Main -g -cp /workspace/scratch/fa9930c13bab/assignment4/build/common -d /workspace/scratch/fa9930c13bab/assignment4/build/Q6 /workspace/scratch/fa9930c13bab/assignment4/Q6/CampusEvents.java /workspace/scratch/fa9930c13bab/assignment4/Q6/Registration.java /workspace/scratch/fa9930c13bab/assignment4/Q6/RegistrationDao.java /workspace/scratch/fa9930c13bab/assignment4/Q6/JdbcRegistrationDao.java /workspace/scratch/fa9930c13bab/assignment4/Q6/RegistrationService.java
+
+
+Exit=0; expected_failure=False

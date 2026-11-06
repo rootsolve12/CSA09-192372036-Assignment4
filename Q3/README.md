@@ -38,3 +38,19 @@ Nested BorderLayout and FlowLayout visit N immediate children across the tree in
 ## Evidence and execution
 
 `results/compiler.txt` records actual compilation. `results/gui-tests.txt` records assertions against running desktop windows. Screenshots are real screen captures and their filenames identify the requirement demonstrated. Tests were executed in the workspace; personally rerun every required task and understand the design before submission.
+
+## GridBagLayout alternative sketch
+
+```java
+JPanel root = new JPanel(new GridBagLayout());
+GridBagConstraints c = new GridBagConstraints();
+c.gridx = 0; c.weightx = 1; c.fill = GridBagConstraints.HORIZONTAL;
+c.gridy = 0; root.add(title, c);
+c.gridy = 1; root.add(searchControls, c);
+c.gridy = 2; c.weighty = 1; c.fill = GridBagConstraints.BOTH;
+root.add(resultsScrollPane, c);
+c.gridy = 3; c.weighty = 0; c.fill = GridBagConstraints.HORIZONTAL;
+root.add(navigationControls, c);
+c.gridy = 4; root.add(status, c);
+```
+This concise sketch retains the two control-row panels; fully flattening all controls into grid cells can remove them too, at the cost of more grid coordinates and spans. The earlier one-container count refers to that fully flattened version. In both cases only the results row receives vertical weight.
