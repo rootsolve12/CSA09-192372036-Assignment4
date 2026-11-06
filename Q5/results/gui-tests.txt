@@ -1,0 +1,9 @@
+Actual GUI execution: OpenJDK 21.0.12.1; 2026-11-06T15:46:31.746088302Z
+PASS: Frame after valid conversion by Enter with dialog
+PASS: Frame invalid amount feedback
+PASS: Named after valid conversion by Enter with dialog
+PASS: Named invalid amount feedback
+PASS: Anonymous after valid conversion by Enter with dialog
+PASS: Anonymous invalid amount feedback
+PASS: Lambda after valid conversion by Enter with dialog
+PASS: Lambda invalid amount feedback

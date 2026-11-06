@@ -1,0 +1,15 @@
+{
+  "currencies": [
+    "INR",
+    "USD",
+    "EUR"
+  ],
+  "valid": "1000",
+  "invalid": [
+    "abc",
+    "NaN",
+    "-1"
+  ],
+  "expected_usd": "12.00",
+  "trigger": "button before; Enter after"
+}

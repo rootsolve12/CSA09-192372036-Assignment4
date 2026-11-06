@@ -1,0 +1,12 @@
+$ java -m jdk.compiler/com.sun.tools.javac.Main -g -cp /workspace/scratch/fa9930c13bab/assignment4/build/common -d /workspace/scratch/fa9930c13bab/assignment4/build/Q5/before /workspace/scratch/fa9930c13bab/assignment4/Q5/before/LambdaConverter.java /workspace/scratch/fa9930c13bab/assignment4/Q5/before/NamedConverter.java /workspace/scratch/fa9930c13bab/assignment4/Q5/before/AnonymousConverter.java /workspace/scratch/fa9930c13bab/assignment4/Q5/before/FrameConverter.java
+
+
+Exit=0; expected_failure=False
+$ java -m jdk.compiler/com.sun.tools.javac.Main -g -cp /workspace/scratch/fa9930c13bab/assignment4/build/common -d /workspace/scratch/fa9930c13bab/assignment4/build/Q5/after /workspace/scratch/fa9930c13bab/assignment4/Q5/after/LambdaConverter.java /workspace/scratch/fa9930c13bab/assignment4/Q5/after/NamedConverter.java /workspace/scratch/fa9930c13bab/assignment4/Q5/after/AnonymousConverter.java /workspace/scratch/fa9930c13bab/assignment4/Q5/after/FrameConverter.java
+
+
+Exit=0; expected_failure=False
+$ java -m jdk.compiler/com.sun.tools.javac.Main -g -cp /workspace/scratch/fa9930c13bab/assignment4/build/common -d /workspace/scratch/fa9930c13bab/assignment4/build/Q5/supplied /workspace/scratch/fa9930c13bab/assignment4/Q5/supplied/Converter.java
+
+
+Exit=0; expected_failure=False

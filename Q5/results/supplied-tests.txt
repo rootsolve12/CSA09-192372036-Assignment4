@@ -1,0 +1,4 @@
+PASS: input=1000 output=12.00
+PASS: input=abc output=Invalid amount
+PASS: input=NaN output=Invalid amount
+PASS: input=-1 output=Invalid amount

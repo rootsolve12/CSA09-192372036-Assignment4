@@ -1,0 +1,9 @@
+Actual GUI execution: OpenJDK 21.0.12.1; 2026-11-06T15:46:27.996202728Z
+PASS: Frame before valid conversion by button
+SCREENSHOT Q5/screenshots/Frame-before.png
+PASS: Named before valid conversion by button
+SCREENSHOT Q5/screenshots/Named-before.png
+PASS: Anonymous before valid conversion by button
+SCREENSHOT Q5/screenshots/Anonymous-before.png
+PASS: Lambda before valid conversion by button
+SCREENSHOT Q5/screenshots/Lambda-before.png
